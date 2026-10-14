@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-13",
+  "productionBuild": "passed",
+  "dashboardTests": 6,
+  "ownerCliTests": 10,
+  "originalTemplateChangedFiles": [],
+  "sceneAndStylesPreserved": true,
+  "browser": {
+    "reviewAcceptVerified": true,
+    "memorySearchAndFilter": true,
+    "revocationPreviewCancelled": true,
+    "mobileNavigation": true,
+    "noHorizontalOverflowAt": [
+      390,
+      1440
+    ],
+    "galleryAssetsLoaded": 5
+  },
+  "crossAppEvidence": "dashboard-cross-app.json",
+  "preview": "isolated synthetic signed-log workspace; no model or blockchain calls",
+  "hostedValidation": {
+    "status": "blocked",
+    "publicHttpStatus": 503,
+    "vpsLocalHealthStatus": 200,
+    "infrastructureChanged": false
+  }
+}

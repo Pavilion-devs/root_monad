@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "date": "2026-10-13",
+  "origin": "https://memory.useroot.xyz",
+  "sequence": "4",
+  "acceptedCheckpoint": "0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1",
+  "pendingProposal": "0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0",
+  "checks": {
+    "signedInboxVerified": true,
+    "appGrantsRead": true,
+    "codingIdentityStillRevoked": true,
+    "exactLiveApprovalPreviewVerified": true,
+    "noApprovalSignatureCreated": true,
+    "pendingProposalUntouched": true,
+    "acceptedHeadUnchanged": true
+  },
+  "tests": {
+    "typescript": 24,
+    "python": 66,
+    "ownerFocused": 16
+  },
+  "interruption": "First hosted read returned CONTENT_UNAVAILABLE; a fresh retry verified successfully. No cached fallback used.",
+  "limitations": [
+    "Live writes intentionally left to owner confirmation; mutations and lost-ack recovery tested with disposable local fixture keys.",
+    "Signed expired/conflicting intents require investigation if acceptance cannot be reconciled; no automatic force reset.",
+    "Existing sequence-1 backup remains stale.",
+    "No VPS containers, proxy routes or DNS changed."
+  ]
+}

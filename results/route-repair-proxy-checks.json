@@ -1,0 +1,7 @@
+{
+  "providerProbe": 200,
+  "probeCannotReadHead": 444,
+  "probeCannotPost": 403,
+  "unknownHostDenied": 444,
+  "domainHttpRedirect": 308
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-13",
+  "transport": "public HTTPS via local owner companion",
+  "authority": "monad_testnet",
+  "sequence": "7",
+  "checkpoint": "0xbe25c9046ed68507dd220a1d8c8002d7d9acadee41addc8063310651e20bec0e",
+  "acceptedRecords": 3,
+  "earlierVersions": 1,
+  "activeGrants": 3,
+  "removedGrants": 1,
+  "browserVerified": true,
+  "checks": [
+    "outage retains session and retry control",
+    "Try again recovers after public route repair",
+    "revision 7 verified against Monad",
+    "superseded 30-day decision and original source displayed",
+    "Claude Code and Codex grant scopes displayed"
+  ],
+  "newApprovals": 0,
+  "grantChanges": 0,
+  "modelCalls": 0,
+  "chainTransactions": 0,
+  "preview": "http://127.0.0.1:59579/app"
+}

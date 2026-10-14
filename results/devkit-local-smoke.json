@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "authority": "signed_log",
+  "checks": [
+    "fresh identities",
+    "no overwrite",
+    "proposal remains pending",
+    "exact owner confirmation",
+    "shared verified reads",
+    "real MCP stdio",
+    "owner scope denial",
+    "restart persistence",
+    "rejection",
+    "revocation",
+    "encrypted database",
+    "private file permissions"
+  ],
+  "modelCalls": 0,
+  "chainTransactions": 0
+}

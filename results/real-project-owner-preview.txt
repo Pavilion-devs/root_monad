@@ -1,0 +1,59 @@
+{
+  "action": "approve",
+  "target": "0x789d043a7b5f2bbdbb16cb73f2a018b7b561da07a7c61cf91e659c6a64140640",
+  "project": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+  "fromSequence": "6",
+  "toSequence": "7",
+  "baseCheckpoint": "0x1cb898ff5963d3af6109e2aaf333c78ffab8584db11910c16a9b996d7da5ff45",
+  "confirmation": "0xa9f114b076bb4d4eb56c9ef03f625081e47abe2624294e965192000e90f8ad05",
+  "expiresAtUnix": "1791885078",
+  "proposal": {
+    "id": "0x789d043a7b5f2bbdbb16cb73f2a018b7b561da07a7c61cf91e659c6a64140640",
+    "author": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+    "status": "pending",
+    "stale": false,
+    "baseCheckpoint": "0x1cb898ff5963d3af6109e2aaf333c78ffab8584db11910c16a9b996d7da5ff45",
+    "records": [
+      {
+        "author": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+        "content": "Portable memory is a separate project from the agent runtime. Keep its code and documentation in the portable-memory folder, separate from the runtime folder.",
+        "formatVersion": "0",
+        "id": "0x99dd789dbbe593b1b0a9679677aa5e7d13bb0e42c0d045d4ca50ce9cfd184616",
+        "kind": "decision",
+        "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+        "replaces": null,
+        "sourceIds": [
+          "0x89c0e66aef4acfa5695e94185cb356b0acd772d40793396827adb694b118c826"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "excerpt": "Portable memory is a separate project from the agent runtime. Keep its code and documentation in the portable-memory folder, separate from the runtime folder.",
+        "formatVersion": "0",
+        "id": "0x89c0e66aef4acfa5695e94185cb356b0acd772d40793396827adb694b118c826",
+        "kind": "application_observation",
+        "locator": null,
+        "occurredAt": null,
+        "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+        "speaker": "MCP application"
+      }
+    ],
+    "retractions": [],
+    "replacements": []
+  },
+  "referencedSourcesInReview": [
+    {
+      "excerpt": "Portable memory is a separate project from the agent runtime. Keep its code and documentation in the portable-memory folder, separate from the runtime folder.",
+      "formatVersion": "0",
+      "id": "0x89c0e66aef4acfa5695e94185cb356b0acd772d40793396827adb694b118c826",
+      "kind": "application_observation",
+      "locator": null,
+      "occurredAt": null,
+      "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+      "speaker": "MCP application"
+    }
+  ],
+  "effect": "Accept these records with their stated kinds and apply their replacements/retractions."
+}
+Preview only. No approval signed or committed. Run the same command with --confirm followed by the confirmation value to approve this exact review.

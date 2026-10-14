@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "replicasDiverged": true,
+  "leftDigest": "0x18158b7677d78c0725e63b3ab123e8c5d7b25a01ca39bea4bff0eae6a410ce31",
+  "rightDigest": "0x7268c74162050a7e648427836ec6cbce519fdc32a4b2ae1cce4221c671712cb5",
+  "historyRestored": true,
+  "limitation": "Historical signatures do not prove latest state or initial receipt time."
+}

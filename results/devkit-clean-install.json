@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "archive": "portable-memory-devkit-0.1.0.zip",
+  "sha256": "77bcbc0256fb7197d5f47dbd6a2752585f3c83e02c6894fa8673c0ee7e025308",
+  "fileCount": 26,
+  "cleanVenv": true,
+  "manifestVerified": true,
+  "pipCheck": "No broken requirements found.",
+  "python": "3.14.6",
+  "platform": "darwin",
+  "sourceCheckoutUsed": false,
+  "modelCalls": 0,
+  "chainTransactions": 0,
+  "smoke": {
+    "passed": true,
+    "authority": "signed_log",
+    "checks": [
+      "fresh identities",
+      "no overwrite",
+      "proposal remains pending",
+      "exact owner confirmation",
+      "shared verified reads",
+      "real MCP stdio",
+      "owner scope denial",
+      "restart persistence",
+      "rejection",
+      "revocation",
+      "encrypted database",
+      "private file permissions"
+    ],
+    "modelCalls": 0,
+    "chainTransactions": 0
+  }
+}

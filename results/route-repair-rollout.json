@@ -1,0 +1,7 @@
+{
+  "proxyReloaded": true,
+  "containersUnchanged": true,
+  "backup": "/srv/portable-memory/nginx-public.before-ip-health.conf",
+  "oldSha256": "5e92be14e5b585fc6fa35d2b695f4c29da9094ee7c8fce9aad69984e3cdb94be",
+  "newSha256": "6d1a1be4f88d997fdcefa90195f5edf349f4279f36c407bd3f47766bf76d1c1e"
+}

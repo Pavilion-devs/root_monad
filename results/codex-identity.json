@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "application": "0x52c1cadd379b46d7db11d1a35ffe94cfb91787c5",
+  "profile": "/Users/olathepavilion/Library/Application Support/PortableMemory/monad-testnet/hosted-memory/codex/profile.json",
+  "rights": [
+    "propose",
+    "read_current"
+  ],
+  "grantCheckpoint": "0x1cb898ff5963d3af6109e2aaf333c78ffab8584db11910c16a9b996d7da5ff45",
+  "sequence": "6",
+  "currentSequence": "6",
+  "checks": {
+    "distinctIdentity": true,
+    "exactGrantVerified": true,
+    "pythonAndTypescriptVerified": true
+  },
+  "transaction": {
+    "authorityMode": "monad_testnet",
+    "committed": "0x1cb898ff5963d3af6109e2aaf333c78ffab8584db11910c16a9b996d7da5ff45",
+    "sequence": "6",
+    "transactionHash": "0x423f58eec2059e288881a225cf6511c2be7541f109d51d78abfbc768a65ee437",
+    "confirmation": "finalized_rpc_verified"
+  }
+}

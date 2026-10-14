@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "modelMode": "controlled_fixture",
+  "liveModelCalls": 0,
+  "planningAndCodingIdentities": true,
+  "verifiedRegistryContext": true,
+  "pendingExcludedFromPrompts": true,
+  "draftsDoNotWrite": true,
+  "ownerReviewRequired": true,
+  "correctionsSeenOnNextRun": true,
+  "sourceReferencesPreserved": true,
+  "observationsNotLabeledDecisions": true,
+  "protocolCredentialsExcludedFromModelPayload": true,
+  "limitations": [
+    "Shared Python adapter implementation with two role profiles",
+    "Live Anthropic transport implemented but not called",
+    "Generated advice is unverified; citations do not prove entailment"
+  ]
+}

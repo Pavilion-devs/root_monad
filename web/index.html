@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portable memory · Local workspace</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<header><a class="brand" href="/">◈ <span>Portable memory</span></a><span class="badge">Local prototype</span></header>
+<section class="intro"><p class="eyebrow">ONE PROJECT, TWO ASSISTANTS</p><h1>Your decisions.<br>A shared memory.</h1><p class="lede">Keep the context. Review what changes.<br>Carry the accepted version into your next conversation.</p></section>
+<div id="status" class="status" role="status" aria-live="polite">Connecting to your local workspace…</div>
+<div class="workspace">
+<section class="panel"><div class="section-head"><div><p class="eyebrow">CURRENT CONTEXT</p><h2>What we’ve decided</h2></div><button id="refresh" class="quiet">Refresh</button></div>
+<label class="small" for="reader">View through</label><select id="reader"><option value="planning">Planning assistant</option><option value="coding">Coding assistant</option></select>
+<div id="records" class="cards"></div><p id="version" class="footnote"></p>
+<details><summary>Earlier versions</summary><div id="history"></div></details></section>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">SUGGEST A CHANGE</p><h2>Ideas become decisions</h2></div></div>
+<p class="muted">An assistant can suggest a change. Your approval makes it part of the shared context.</p>
+<label class="small" for="author">From</label><select id="author"><option value="planning">Planning assistant</option><option value="coding">Coding assistant</option></select>
+<label class="small" for="mode">Change</label><select id="mode"><option value="new">Add a decision</option><option value="correct">Correct the current decision</option></select>
+<label class="small" for="suggestion">Suggested memory</label><textarea id="suggestion" rows="3" maxlength="4000">Retain project notes for 30 days.</textarea>
+<button id="propose" class="primary">Send for review <span>↗</span></button>
+<div class="divider"></div><h3>Awaiting your review <span id="count" class="count">0</span></h3><div id="inbox"></div></section>
+</div>
+<footer><p>Sample-data workspace · Disposable identities · No model or live blockchain calls</p><p>Your approval and context are verified locally. The encrypted workspace lasts for this demo session.</p></footer>
+<dialog id="review"><div class="dialog-head"><p class="eyebrow">YOUR REVIEW</p><button id="close-review" class="quiet" aria-label="Close review">✕</button></div><h2 id="review-title">Approve this decision?</h2><p class="muted">Review the exact change before it becomes shared context.</p><div id="review-content"></div><div class="dialog-actions"><button id="cancel-review" class="quiet">Go back</button><button id="approve" class="primary">Approve decision</button></div></dialog>
+</main><script type="module" src="/app.js"></script></body></html>

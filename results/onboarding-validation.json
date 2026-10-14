@@ -1,0 +1,33 @@
+{
+  "milestone": "own-wallet project creation and recovery local preview",
+  "date": "2026-10-13",
+  "url": "http://127.0.0.1:51746/start",
+  "validation": {
+    "pythonOnboardingTests": 8,
+    "javascriptWalletTests": 4,
+    "registryRegressionTests": 7,
+    "memoryRegressionTests": 9,
+    "dashboardRegressionTests": 6,
+    "frontendProductionBuild": "passed",
+    "desktopBrowser": "connect screen renders; OKX detected; no console errors",
+    "narrowBrowser": {
+      "width": 390,
+      "contentWidth": 390
+    },
+    "templateSourceChanged": false,
+    "templateStylesAndScenePreserved": true,
+    "liveRegistryCodeHashMatches": true,
+    "finalizedBlockObserved": "0x4382be2"
+  },
+  "realWalletTransactionSubmitted": false,
+  "newFlowRealWalletTest": "pending user interaction",
+  "publicDeployment": false,
+  "existingHostedProjectModified": false,
+  "remaining": [
+    "Real wallet creation and reload recovery",
+    "Wallet-owned assistant enrollment",
+    "Full owner dashboard integration",
+    "Expired/dropped transaction recovery UX",
+    "Public admission and resource controls"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "containersUnchanged": true,
+  "otherPublicSites": {
+    "https://devnet.toluva.xyz": 200,
+    "https://virgoeye.useroot.xyz": 200
+  },
+  "publicTransportChecks": {
+    "plainHttpRedirect": 301,
+    "spoofedHttpsHeaderRedirect": 301,
+    "spoofedForwardedHeaderRedirect": 301,
+    "certificateValidatedLiveness": 200,
+    "acceptedHead": 200,
+    "wrongOrigin": 403,
+    "unsignedRead": 400,
+    "oversizedBody": 413,
+    "noDemoKeys": 404
+  }
+}

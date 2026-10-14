@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "authority": "signed_log",
+  "sequence": "3",
+  "recordCount": 3,
+  "bothAppsSameCheckpoint": true,
+  "modelCalls": 0,
+  "chainTransactions": 0
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "date": "2026-10-13",
+  "sequence": "4",
+  "proposalStatus": "pending",
+  "approvalSigned": false,
+  "checks": {
+    "exactOwnerApprovalPreview": true,
+    "freshReadAfter12SecondsIdle": true,
+    "independentPythonAndTypescriptVerification": true,
+    "deployedFilesMatch": true,
+    "otherFiveServicesPreserved": true,
+    "proxyUnchanged": true
+  },
+  "tests": {
+    "typescript": 24,
+    "python": 72
+  },
+  "limitation": "Original exception was masked by the old head handler; exact underlying live fault was not recovered. Closed-connection recovery and no broadcast replay are covered by controlled tests."
+}

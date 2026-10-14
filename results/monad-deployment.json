@@ -1,0 +1,16 @@
+{
+  "chainId": 10143,
+  "contractAddress": "0x87207e30F12a9dF9ceF69657e4330f4D8fde6e67",
+  "deployer": "0x08B8e4FF833EaCa61Ae7E7F699f47728Ff347DeB",
+  "transactionHash": "0x0a5a473bb4564dc357524e41b0b397c2ef332ad8b9b7f710a6e14c54561c02de",
+  "blockNumber": "0x434316c",
+  "blockHash": "0xa87dfdbd9156e5ba4172260d1b0c7800a07a8df4534c856a147187bf4c3815da",
+  "confirmation": "finalized_rpc_verified",
+  "gasUsed": "970168",
+  "feeWei": "98957136000000000",
+  "runtimeCodeHash": "0xcdae47067627507ad250a037890b3aa0c241a49fd4b69431d6d2a00db1e05790",
+  "creationBytecodeHash": "0xc2de34c21038bed32454ab012cae752200b75bf7656b34a8ad045d50f632260b",
+  "sourceSha256": "c4ca199d66e6452140ebe8e436fa275d2577d5d4a310236467fa32f70b1282e6",
+  "observedAtUnix": 1791848016,
+  "resumeOrSubmissionElapsedSeconds": 3.617
+}

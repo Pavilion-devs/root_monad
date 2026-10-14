@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable memory experimental control",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": "0"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "sequence": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,77})$"
+    },
+    "previousDigest": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "creationNonce": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "snapshotDigest": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "grants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "application": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{40}$"
+          },
+          "serviceId": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "rights": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "propose",
+                "read_current",
+                "read_history"
+              ]
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          },
+          "expiresAt": {
+            "type": "string",
+            "pattern": "^(0|[1-9][0-9]{0,77})$"
+          }
+        },
+        "required": [
+          "application",
+          "serviceId",
+          "rights",
+          "expiresAt"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 32
+    },
+    "serviceId": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "storage": {
+      "type": "object",
+      "properties": {
+        "providerId": {
+          "type": "string",
+          "pattern": "^0x[0-9a-f]{64}$"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        }
+      },
+      "required": [
+        "providerId",
+        "locator"
+      ],
+      "additionalProperties": false
+    },
+    "salt": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "formatVersion",
+    "projectId",
+    "sequence",
+    "previousDigest",
+    "creationNonce",
+    "snapshotDigest",
+    "grants",
+    "serviceId",
+    "storage",
+    "salt"
+  ],
+  "additionalProperties": false
+}

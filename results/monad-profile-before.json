@@ -1,0 +1,50 @@
+{
+  "label": "before",
+  "readOnly": true,
+  "startedAtUnix": 1791849308,
+  "samples": [
+    {
+      "elapsedSeconds": 15.651,
+      "rpcSeconds": 15.61,
+      "rpcCalls": 30,
+      "methods": {
+        "eth_chainId": 3,
+        "eth_getBlockByNumber": 9,
+        "eth_getCode": 3,
+        "eth_call": 6,
+        "eth_getLogs": 3,
+        "eth_getTransactionReceipt": 6
+      },
+      "checkpoint": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226"
+    },
+    {
+      "elapsedSeconds": 18.966,
+      "rpcSeconds": 18.934,
+      "rpcCalls": 30,
+      "methods": {
+        "eth_chainId": 3,
+        "eth_getBlockByNumber": 9,
+        "eth_getCode": 3,
+        "eth_call": 6,
+        "eth_getLogs": 3,
+        "eth_getTransactionReceipt": 6
+      },
+      "checkpoint": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226"
+    },
+    {
+      "elapsedSeconds": 14.72,
+      "rpcSeconds": 14.681,
+      "rpcCalls": 30,
+      "methods": {
+        "eth_chainId": 3,
+        "eth_getBlockByNumber": 9,
+        "eth_getCode": 3,
+        "eth_call": 6,
+        "eth_getLogs": 3,
+        "eth_getTransactionReceipt": 6
+      },
+      "checkpoint": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226"
+    }
+  ],
+  "errors": []
+}

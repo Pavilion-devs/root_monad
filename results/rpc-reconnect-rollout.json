@@ -1,0 +1,1 @@
+{"updated": "portable-memory", "image": "sha256:93919333fc0df9e7331623bdbd7f220bc4cbbfe683edcbf739ae09e8bd564f5a", "rollbackContainer": "portable-memory-before-rpc-reconnect", "proxyUnchanged": true, "samePrivateIp": "172.20.0.2"}

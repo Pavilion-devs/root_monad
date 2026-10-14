@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "authorityMode": "signed_log",
+  "pendingNotCurrent": true,
+  "appCannotApprove": true,
+  "pythonAndTypescriptReadSameDecision": true,
+  "correctionPreservesHistory": true,
+  "conflictingCorrectionsRejected": true,
+  "staleWriteRejected": true,
+  "serviceRestart": true,
+  "durableCommitRetry": true,
+  "databasePlaintextScanPassed": true,
+  "clientTamperingAndOmissionChecks": true,
+  "originDenied": true,
+  "limitations": [
+    "This scenario uses signed-log authority; registry mode has a separate integration test",
+    "Synthetic data; no model calls",
+    "Recovery key remains in test launcher memory",
+    "No provider migration in this test"
+  ]
+}

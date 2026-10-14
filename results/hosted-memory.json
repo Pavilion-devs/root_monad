@@ -1,0 +1,250 @@
+{
+  "network": "monad_testnet",
+  "origin": "https://memory.useroot.xyz",
+  "checks": {
+    "dedicatedRelayerAndGenesisFinalized": true,
+    "hostedCrossApplicationApproval": true,
+    "restartVerified": true,
+    "backupRestoreVerified": true,
+    "encryptedOffsiteBackupSaved": true,
+    "hostedRequestBoundaries": true,
+    "existingFiveContainersUnchanged": true,
+    "existingPublicSitesReturn200": true,
+    "dedicatedDnsResolved": true,
+    "publicTransportBoundaries": true,
+    "publicHttpsVerified": true,
+    "hostedLiveAssistantJourney": true
+  },
+  "existingServices": [
+    "/toluva-api 9b652d75963e76795d384cf4d9d12bb923fdcef661feb4a39ebd5ddc83268572 2026-10-13T03:53:06.724087861Z running",
+    "/toluva-web 63bf0ef636ad859544b6af5a926553adc4880ea57f0693fc2052e94736a8a6c7 2026-10-10T23:04:54.490727437Z running",
+    "/virgoeye-frontend 2486868f15c806b51a0b6eca960d91c879d3704d1f0202fb0e4f101eef73dfb0 2026-10-10T23:04:54.395298153Z running",
+    "/virgoeye-backend f35c5bb30a338112c378f51b315f85a0726c573bfa24bae6d1e77a273e6e741d 2026-10-10T23:04:54.203766741Z running",
+    "/agent-runtime 61f5837e9c9ace4811a65188112b73ac70f743a1c5d238125eb238421eef2a35 2026-10-10T23:04:54.238718981Z running"
+  ],
+  "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+  "relayer": "0x0C0760f5181F2ffE78D7efCc1BF74fadc264580B",
+  "fundingTransaction": "0x803c461d5f0d9769dff490606ca66793b1b57755793224d8e04b6637e0af3ac7",
+  "fundedTestMon": "0.5",
+  "stateDirectory": "/Users/olathepavilion/Library/Application Support/PortableMemory/monad-testnet/hosted-memory",
+  "acceptedDigest": "0xbe25c9046ed68507dd220a1d8c8002d7d9acadee41addc8063310651e20bec0e",
+  "commitTransaction": "0x58b5fcc64780e395f973d71e5991f891d881105fafd73eb79a692262c1d40a5a",
+  "samples": [
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.386
+    },
+    {
+      "operation": "proposals",
+      "elapsedSeconds": 1.137
+    },
+    {
+      "operation": "prepare",
+      "elapsedSeconds": 1.577
+    },
+    {
+      "operation": "commit_to_verified_ack",
+      "elapsedSeconds": 3.272
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.492
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.908
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.306
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.501
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.584
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 1.576
+    }
+  ],
+  "deployment": [
+    {
+      "name": "/portable-memory",
+      "containerId": "de6353c001df7ff486d6eb8522600c8c1c2add7ccdd6e6f481326b63c55235e3",
+      "imageId": "sha256:cabb16731a680354042fda93680e56ed6bfb19af57b39ff289bdc0c5c5117c9d",
+      "user": "10002:10002",
+      "memoryLimitBytes": 268435456,
+      "nanoCpus": 250000000,
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOpt": [
+        "no-new-privileges:true"
+      ],
+      "portBindings": {},
+      "restartPolicy": {
+        "Name": "unless-stopped",
+        "MaximumRetryCount": 0
+      },
+      "status": "running"
+    },
+    {
+      "name": "/portable-memory-proxy",
+      "containerId": "d635d33dbc7bfa39b3474804e59221ab63406ae830f3d7740eba9de0bcba665e",
+      "imageId": "sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94",
+      "user": "101:101",
+      "memoryLimitBytes": 67108864,
+      "nanoCpus": 100000000,
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOpt": [
+        "no-new-privileges:true"
+      ],
+      "portBindings": {
+        "8080/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "3014"
+          },
+          {
+            "HostIp": "10.3.245.2",
+            "HostPort": "3014"
+          }
+        ]
+      },
+      "restartPolicy": {
+        "Name": "unless-stopped",
+        "MaximumRetryCount": 0
+      },
+      "status": "running"
+    },
+    {
+      "name": "/portable-memory-proxy-before-public",
+      "containerId": "1f7e57dc9f4892c1eeb7e5bd653ce7d0c0df31e3f52ca68cf7407c3cc7edb2df",
+      "imageId": "sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94",
+      "user": "101:101",
+      "memoryLimitBytes": 67108864,
+      "nanoCpus": 100000000,
+      "readOnlyRoot": true,
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOpt": [
+        "no-new-privileges:true"
+      ],
+      "portBindings": {
+        "8080/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "3014"
+          }
+        ]
+      },
+      "restartPolicy": {
+        "Name": "unless-stopped",
+        "MaximumRetryCount": 0
+      },
+      "status": "exited"
+    }
+  ],
+  "publicHttpsReady": true,
+  "pending": [],
+  "backup": {
+    "path": "/Users/olathepavilion/Library/Application Support/PortableMemory/monad-testnet/hosted-memory/offsite-backup.enc",
+    "archiveSha256": "60daca3fb33cce14182834efede3bda3d4e4627442ad4dbc448b2be0b3666ad9",
+    "serverSnapshot": "/srv/portable-memory/backups/verified-checkpoint",
+    "checkpointDigest": "0x6a961cfe1d3367e272bd25a5d32b41b86f55b7aca4978e2922b1f41796984fbd",
+    "sequence": "1",
+    "current": false,
+    "note": "Predates hosted assistant correction and revocation; do not restore over newer finalized state."
+  },
+  "privateDeploymentPassed": true,
+  "verifiedAtUnix": 1791874280,
+  "observations": [
+    "Initial private readiness probe and first post-restart probe returned 502 while the resource-limited app initialized. Health-wait now gates exercise calls.",
+    "The original five container IDs and start timestamps were preserved.",
+    "Only the portable-memory proxy was replaced for private edge access. Its stopped predecessor is retained for rollback; other containers remain unchanged.",
+    "Certificate issuance preceded edge distribution. After distribution, public TLS validation and edge HTTP redirects (including spoofed scheme headers) passed; a signed context read passed Python and TypeScript verification."
+  ],
+  "validation": {
+    "typecheck": true,
+    "typescriptChecks": 24,
+    "pythonTests": 54
+  },
+  "dns": {
+    "name": "memory.useroot.xyz",
+    "type": "A",
+    "value": "57.129.106.133",
+    "ttl": 60,
+    "provider": "Vercel"
+  },
+  "edge": {
+    "provider": "Tierhive",
+    "backend": "10.3.245.2:3014",
+    "certificateIssued": true,
+    "certificateExpires": "2027-01-11",
+    "certificateServed": true
+  },
+  "publicTransportChecks": {
+    "plainHttpRedirect": 301,
+    "spoofedHttpsHeaderRedirect": 301,
+    "spoofedForwardedHeaderRedirect": 301,
+    "certificateValidatedLiveness": 200,
+    "acceptedHead": 200,
+    "wrongOrigin": 403,
+    "unsignedRead": 400,
+    "oversizedBody": 413,
+    "noDemoKeys": 404
+  },
+  "existingPublicSiteStatus": {
+    "https://devnet.toluva.xyz": "200",
+    "https://virgoeye.useroot.xyz": "200"
+  },
+  "originalAcceptedDigest": "0x6a961cfe1d3367e272bd25a5d32b41b86f55b7aca4978e2922b1f41796984fbd",
+  "expectedRecords": [
+    {
+      "author": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+      "content": "Add a boundary test for the accepted retention rule; timestamp semantics still need owner clarification.",
+      "formatVersion": "0",
+      "id": "0x14778b9a09a5275d71bbd80f7ba351e7eaeedb3ebd5d7b3ff908dec618818be9",
+      "kind": "observation",
+      "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+      "replaces": null,
+      "sourceIds": [
+        "0xa98096b4a47616c50b4e805da436afbf5c4e0b1282e866c694365468986360ab"
+      ]
+    },
+    {
+      "author": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+      "content": "Portable memory is a separate project from the agent runtime. Keep its code and documentation in the portable-memory folder, separate from the runtime folder.",
+      "formatVersion": "0",
+      "id": "0x99dd789dbbe593b1b0a9679677aa5e7d13bb0e42c0d045d4ca50ce9cfd184616",
+      "kind": "decision",
+      "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+      "replaces": null,
+      "sourceIds": [
+        "0x89c0e66aef4acfa5695e94185cb356b0acd772d40793396827adb694b118c826"
+      ]
+    },
+    {
+      "author": "0x77792de10e6af024e4f0da4e1d91af55472c2951",
+      "content": "Hosted synthetic project: retain notes for 14 days.",
+      "formatVersion": "0",
+      "id": "0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45",
+      "kind": "decision",
+      "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+      "replaces": "0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9",
+      "sourceIds": [
+        "0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a"
+      ]
+    }
+  ],
+  "latestJourneyReport": "results/hosted-assistants.json"
+}

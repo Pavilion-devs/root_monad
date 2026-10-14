@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "network": "monad_testnet",
+  "chainId": 10143,
+  "startedAtUnix": 1791848122,
+  "checks": {
+    "liveGenesisAndIndependentClients": true,
+    "crossApplicationAcceptedMemory": true,
+    "pendingNotCurrent": true,
+    "competingOwnerApprovalRejected": true,
+    "correctionShared": true,
+    "revocationBlocksFreshAndCachedRead": true,
+    "sourceServiceStopped": true,
+    "encryptedMigration": true,
+    "oldAudienceRejected": true,
+    "continuedReadAndProposalAfterMigration": true,
+    "revocationPreservedAcrossMigration": true,
+    "historicalReadAfterMigration": true
+  },
+  "transactions": [
+    {
+      "committed": "0x6e96c97d3654cdad469d53399fc4a67f96ad443ee96df07cd65e74a533acba0c",
+      "sequence": "1",
+      "authorityMode": "monad_testnet",
+      "transactionHash": "0xeef88a929b1893bf1337e8274640f112c7a62d260a5f47611ce5509867ad04de",
+      "confirmation": "finalized_rpc_verified"
+    },
+    {
+      "committed": "0x8cf65233c150a9eccdaaa418d84889f17adb2756873af05656d7e6839114e2db",
+      "sequence": "2",
+      "authorityMode": "monad_testnet",
+      "transactionHash": "0x5b327f7d6c34a8784ff4c63274038d3c4c9b3a1749dbdc98d9eb88b4a334b7ad",
+      "confirmation": "finalized_rpc_verified"
+    },
+    {
+      "committed": "0xc3e78cb4aba02c8f95ef18bd4c1b4955d45821a7f110aa94f6dd7960289aa65a",
+      "sequence": "3",
+      "authorityMode": "monad_testnet",
+      "transactionHash": "0x93848b0ef62c31bb5cb4a199d6645c80a112f9788ec5a2932138fc7c30af9719",
+      "confirmation": "finalized_rpc_verified"
+    },
+    {
+      "committed": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226",
+      "sequence": "4",
+      "authorityMode": "monad_testnet",
+      "transactionHash": "0x3e33a0c7a0d7e1225025ad61f442a4e471dfc3250c3c4d0a402d658e2bfae91e",
+      "confirmation": "finalized_rpc_verified"
+    }
+  ],
+  "samples": [
+    {
+      "operation": "context",
+      "elapsedSeconds": 13.75
+    },
+    {
+      "operation": "proposals",
+      "elapsedSeconds": 9.836
+    },
+    {
+      "operation": "prepare",
+      "elapsedSeconds": 11.801
+    },
+    {
+      "operation": "commit_to_verified_ack",
+      "elapsedSeconds": 22.353
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 23.042
+    },
+    {
+      "operation": "proposals",
+      "elapsedSeconds": 9.71
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 14.854
+    },
+    {
+      "operation": "prepare",
+      "elapsedSeconds": 11.49
+    },
+    {
+      "operation": "prepare",
+      "elapsedSeconds": 11.516
+    },
+    {
+      "operation": "commit_to_verified_ack",
+      "elapsedSeconds": 20.306
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 12.355
+    },
+    {
+      "operation": "prepare",
+      "elapsedSeconds": 11.852
+    },
+    {
+      "operation": "commit_to_verified_ack",
+      "elapsedSeconds": 22.92
+    },
+    {
+      "operation": "context",
+      "elapsedSeconds": 14.372
+    },
+    {
+      "operation": "proposals",
+      "elapsedSeconds": 10.261
+    },
+    {
+      "operation": "history",
+      "elapsedSeconds": 14.14
+    }
+  ],
+  "limitations": [
+    "Synthetic project and automated owner approvals; not a user study",
+    "Trusted public RPC; no light-client proof",
+    "Two isolated instances of the same reference provider",
+    "Memory services run locally; only the registry is on Monad",
+    "No model calls in this chain exercise"
+  ],
+  "projectId": "0x0ca07650e7ad6fb78f62b09700dcd0483e3a2dfd5e6250f788b7a37d3c9bb0f9",
+  "contractAddress": "0x87207e30F12a9dF9ceF69657e4330f4D8fde6e67",
+  "stateDirectory": "/Users/olathepavilion/Library/Application Support/PortableMemory/monad-testnet/exercise-1791848123",
+  "interruptions": [
+    {
+      "code": "AUTHORITY_UNAVAILABLE",
+      "resumedAtUnix": 1791848561
+    }
+  ],
+  "receipts": [
+    {
+      "transactionHash": "0x2bb36fb4d80a1ee87c19bd2966cc5faa6d1020a75a9136ec95ccc084ee6f04ec",
+      "blockNumber": "0x43432e0",
+      "gasUsed": "300000",
+      "feeWei": "30600000000000000"
+    },
+    {
+      "transactionHash": "0xeef88a929b1893bf1337e8274640f112c7a62d260a5f47611ce5509867ad04de",
+      "blockNumber": "0x43433ca",
+      "gasUsed": "300000",
+      "feeWei": "30600000000000000"
+    },
+    {
+      "transactionHash": "0x5b327f7d6c34a8784ff4c63274038d3c4c9b3a1749dbdc98d9eb88b4a334b7ad",
+      "blockNumber": "0x4343513",
+      "gasUsed": "300000",
+      "feeWei": "30600000000000000"
+    },
+    {
+      "transactionHash": "0x93848b0ef62c31bb5cb4a199d6645c80a112f9788ec5a2932138fc7c30af9719",
+      "blockNumber": "0x4343625",
+      "gasUsed": "300000",
+      "feeWei": "30600000000000000"
+    },
+    {
+      "transactionHash": "0x3e33a0c7a0d7e1225025ad61f442a4e471dfc3250c3c4d0a402d658e2bfae91e",
+      "blockNumber": "0x4343907",
+      "gasUsed": "300000",
+      "feeWei": "30600000000000000"
+    }
+  ],
+  "transactionFeesWei": "153000000000000000",
+  "finalSequence": "4",
+  "finishedAtUnix": 1791848717
+}

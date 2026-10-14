@@ -1,0 +1,297 @@
+{
+  "passed": true,
+  "origin": "https://memory.useroot.xyz",
+  "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+  "modelMode": "live_anthropic",
+  "maxModelCalls": 3,
+  "maxOutputTokensPerCall": 1536,
+  "checks": {
+    "planningProposedCorrection": true,
+    "pendingNotCurrent": true,
+    "codingUsedThirtyBeforeApproval": true,
+    "exactOwnerApprovalVerified": true,
+    "codingUsedFourteenAfterApproval": true,
+    "bothAppsSeeCorrection": true,
+    "revokedReadDenied": true,
+    "revokedModelNotInvoked": true,
+    "pythonAndTypescriptVerified": true
+  },
+  "calls": [
+    {
+      "step": "planning",
+      "question": "Propose exactly one correction to the current retention decision. The replacement content must be exactly: Hosted synthetic project: retain notes for 14 days. Use the current record alias in replaces. Cite the current accepted decision and explain that this suggestion needs owner approval. Keep advice under 100 words.",
+      "ok": true,
+      "result": {
+        "role": "planning",
+        "checkpoint": "0x6a961cfe1d3367e272bd25a5d32b41b86f55b7aca4978e2922b1f41796984fbd",
+        "advice": {
+          "status": "model_generated_unverified",
+          "text": "The current accepted decision (m1) sets retention at 30 days. I'm proposing a correction to change this to 14 days as requested. This is only a suggestion and requires explicit owner review and approval before it takes effect\u2014I cannot approve or implement this change myself."
+        },
+        "citations": [
+          {
+            "ref": "m1",
+            "recordId": "0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9",
+            "status": "accepted_decision",
+            "content": "Hosted synthetic project: retain notes for 30 days.",
+            "sources": [
+              {
+                "excerpt": "Hosted synthetic project: retain notes for 30 days.",
+                "formatVersion": "0",
+                "id": "0x9f6e8433e76c90006b5f96ffaa34b97375f7580af9ae7c8c0de35e4e6c63c5f4",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+                "speaker": "Synthetic test client"
+              }
+            ]
+          }
+        ],
+        "suggestion": {
+          "status": "draft",
+          "proposal": {
+            "formatVersion": "0",
+            "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+            "id": "0xcc40b192fa744e3b4d9c11faa0a860f0f64ca2a72cfd23df33442f0a02bbe45c",
+            "author": "0x77792de10e6af024e4f0da4e1d91af55472c2951",
+            "baseCheckpoint": "0x6a961cfe1d3367e272bd25a5d32b41b86f55b7aca4978e2922b1f41796984fbd",
+            "sources": [
+              {
+                "formatVersion": "0",
+                "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+                "id": "0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a",
+                "kind": "application_observation",
+                "speaker": "Planning assistant",
+                "excerpt": "Hosted synthetic project: retain notes for 14 days.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ],
+            "records": [
+              {
+                "formatVersion": "0",
+                "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+                "id": "0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45",
+                "kind": "decision",
+                "content": "Hosted synthetic project: retain notes for 14 days.",
+                "author": "0x77792de10e6af024e4f0da4e1d91af55472c2951",
+                "sourceIds": [
+                  "0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a"
+                ],
+                "replaces": "0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9"
+              }
+            ],
+            "retractIds": []
+          }
+        }
+      },
+      "metrics": {
+        "modelCalled": true,
+        "model": "claude-sonnet-5",
+        "stopReason": "end_turn",
+        "usage": {
+          "input_tokens": 945,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 149
+        },
+        "memorySent": [
+          {
+            "ref": "m1",
+            "status": "accepted_decision",
+            "content": "Hosted synthetic project: retain notes for 30 days.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Synthetic test client",
+                "excerpt": "Hosted synthetic project: retain notes for 30 days.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          }
+        ],
+        "elapsedSeconds": 9.988
+      }
+    },
+    {
+      "step": "codingBeforeApproval",
+      "question": "What retention rule should the code implement right now? Cite the accepted memory and give one implementation check. Do not propose changes; use a null suggestion. Keep advice under 100 words.",
+      "ok": true,
+      "result": {
+        "role": "coding",
+        "checkpoint": "0x6a961cfe1d3367e272bd25a5d32b41b86f55b7aca4978e2922b1f41796984fbd",
+        "advice": {
+          "status": "model_generated_unverified",
+          "text": "Implement a 30-day retention policy for notes: any note older than 30 days from its creation/last-update timestamp should be automatically deleted or archived per the accepted decision (m1). Implementation check: write a test that creates a note with a backdated timestamp (31 days old) and verifies the retention job correctly flags/removes it, while a 29-day-old note is retained."
+        },
+        "citations": [
+          {
+            "ref": "m1",
+            "recordId": "0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9",
+            "status": "accepted_decision",
+            "content": "Hosted synthetic project: retain notes for 30 days.",
+            "sources": [
+              {
+                "excerpt": "Hosted synthetic project: retain notes for 30 days.",
+                "formatVersion": "0",
+                "id": "0x9f6e8433e76c90006b5f96ffaa34b97375f7580af9ae7c8c0de35e4e6c63c5f4",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+                "speaker": "Synthetic test client"
+              }
+            ]
+          }
+        ],
+        "suggestion": null
+      },
+      "metrics": {
+        "modelCalled": true,
+        "model": "claude-sonnet-5",
+        "stopReason": "end_turn",
+        "usage": {
+          "input_tokens": 913,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 143
+        },
+        "memorySent": [
+          {
+            "ref": "m1",
+            "status": "accepted_decision",
+            "content": "Hosted synthetic project: retain notes for 30 days.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Synthetic test client",
+                "excerpt": "Hosted synthetic project: retain notes for 30 days.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          }
+        ],
+        "elapsedSeconds": 9.296
+      }
+    },
+    {
+      "step": "codingAfterApproval",
+      "question": "What retention rule should the code implement right now? Cite the accepted memory and give one implementation check without claiming execution. Do not propose changes; use a null suggestion. Keep advice under 100 words.",
+      "ok": true,
+      "result": {
+        "role": "coding",
+        "checkpoint": "0x89fbd6b12652702c4934395c4d7445f46d92d45bda35d3c3ff05ab110febefa2",
+        "advice": {
+          "status": "model_generated_unverified",
+          "text": "Implement a 14-day retention policy for notes, per the accepted decision [m1]. The code should delete or expire notes once they exceed 14 days from creation (or last update, depending on intended semantics\u2014clarify if needed). Implementation check: write a unit test that creates a note with a timestamp 15 days in the past and asserts the retention/cleanup logic flags or removes it, while a note dated 13 days old is retained. I have not run this test myself."
+        },
+        "citations": [
+          {
+            "ref": "m1",
+            "recordId": "0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45",
+            "status": "accepted_decision",
+            "content": "Hosted synthetic project: retain notes for 14 days.",
+            "sources": [
+              {
+                "excerpt": "Hosted synthetic project: retain notes for 14 days.",
+                "formatVersion": "0",
+                "id": "0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+                "speaker": "Planning assistant"
+              }
+            ]
+          }
+        ],
+        "suggestion": null
+      },
+      "metrics": {
+        "modelCalled": true,
+        "model": "claude-sonnet-5",
+        "stopReason": "end_turn",
+        "usage": {
+          "input_tokens": 918,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 169
+        },
+        "memorySent": [
+          {
+            "ref": "m1",
+            "status": "accepted_decision",
+            "content": "Hosted synthetic project: retain notes for 14 days.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Planning assistant",
+                "excerpt": "Hosted synthetic project: retain notes for 14 days.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          }
+        ],
+        "elapsedSeconds": 10.666
+      }
+    }
+  ],
+  "transactions": [
+    {
+      "authorityMode": "monad_testnet",
+      "committed": "0x89fbd6b12652702c4934395c4d7445f46d92d45bda35d3c3ff05ab110febefa2",
+      "sequence": "2",
+      "transactionHash": "0x882ff2e006487d88f2f0016862f4cf7a934cb763b2fd2e42f4cdc60c198c40c0",
+      "confirmation": "finalized_rpc_verified"
+    },
+    {
+      "authorityMode": "monad_testnet",
+      "committed": "0xbdef12fa38ba7b002c39cdea3267f4b7a29c3c0213deceb7eb91d8e626477f05",
+      "sequence": "3",
+      "transactionHash": "0x7b9c10756a3e1d4f55b7a0a4cf12e6c3bb10d624f394059304f9b963e604467a",
+      "confirmation": "finalized_rpc_verified"
+    }
+  ],
+  "steps": [
+    "initial",
+    "calls",
+    "planning",
+    "pending",
+    "codingBeforeApproval",
+    "transactions",
+    "accepted",
+    "codingAfterApproval",
+    "planningSeesCorrection",
+    "revoked",
+    "revocationChecked",
+    "checks",
+    "complete"
+  ],
+  "limitations": [
+    "Synthetic notes and explicitly authorized automated owner approval; not a user study",
+    "Planning/coding are reference adapters sharing one implementation, not third-party app integrations",
+    "Three model samples are not a quality benchmark; revoked apps retain previously copied content",
+    "Trusted Monad testnet RPC; single reference provider; coding grant is left revoked"
+  ],
+  "updatedAtUnix": 1791874091,
+  "validation": {
+    "typecheck": true,
+    "typescriptChecks": 24,
+    "pythonTests": 54,
+    "completedRerunUsedZeroModelCalls": true,
+    "existingFiveContainersUnchanged": true
+  },
+  "manualReview": {
+    "retentionAndCitationsCorrect": true,
+    "limitations": [
+      "Coding advice adds deletion/archival and timestamp interpretations not specified by the accepted retention decision. These remain unverified advice."
+    ]
+  },
+  "preflightObservations": [
+    "An unsigned head probe returned 503; the next full transport check passed before live model use."
+  ]
+}

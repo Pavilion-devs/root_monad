@@ -1,0 +1,26 @@
+{
+  "environment": "Anvil local EVM, chain 31337; not Monad",
+  "compiler": "solc 0.8.36",
+  "checks": {
+    "genesisOwnership": true,
+    "genesis": true,
+    "signatureBinding": true,
+    "expiryAndSequence": true,
+    "singleWinner": true,
+    "pythonSignatureOnEvm": true,
+    "idempotentRetry": true,
+    "staleProviderDetected": true,
+    "storageFailure": true,
+    "revocationAtOffchainBoundary": true
+  },
+  "genesisGas": "102059",
+  "updateGas": "84115",
+  "passed": true,
+  "limitations": [
+    "No live Monad measurements",
+    "Registry does not enforce private grants",
+    "Request nonce cache is in-memory in this experiment",
+    "No encryption/storage service implemented",
+    "Baseline replicas diverge without a common sequencer; a trusted sequencer is a valid alternative"
+  ]
+}

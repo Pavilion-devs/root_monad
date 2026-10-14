@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "exitCode": 1,
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a134a4-89f2-7140-a720-56e3abb31b97"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "error",
+        "message": "Model metadata for `gpt-6-sol` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+      }
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "error",
+      "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-6-sol' model is not supported when using Codex with a ChatGPT account.\"}}"
+    },
+    {
+      "type": "turn.failed",
+      "error": {
+        "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-6-sol' model is not supported when using Codex with a ChatGPT account.\"}}"
+      }
+    }
+  ],
+  "prompt": "Use memory_current to retrieve verified project memory. List each current accepted record with its kind, exact content, record ID and source IDs. Include the accepted revision and checkpoint. Keep decisions and observations distinct. Do not propose changes or use other tools. If retrieval fails, stop and report that."
+}

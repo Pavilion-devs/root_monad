@@ -1,0 +1,128 @@
+{
+  "format": "portable-project-memory-design-example",
+  "format_version": "draft-0",
+  "illustrative_only": true,
+  "authority_verification": "none; conversational evidence only",
+  "project": {
+    "id": "example-monad-memory-project",
+    "title": "Portable project memory",
+    "owner_label": "user",
+    "revision": "example-revision-1"
+  },
+  "sources": [
+    {
+      "id": "source-direction",
+      "kind": "conversation_excerpt",
+      "speaker": "user",
+      "locator": "Current conversation; response after examining track starting point 04",
+      "excerpt": "yes i love 04. so yep it sounds good.",
+      "occurred_at": null,
+      "platform_message_id": null
+    },
+    {
+      "id": "source-design-proposal",
+      "kind": "conversation_reference",
+      "speaker": "assistant",
+      "locator": "Current conversation; proposed project memory journey before this draft",
+      "occurred_at": null,
+      "platform_message_id": null
+    },
+    {
+      "id": "source-clearance-report",
+      "kind": "local_experiment_artifact",
+      "locator": "../runtime/experiments/clearance/results/clearance-174b94339b/report.json",
+      "description": "Simulated registry experiment using the runtime; separate from the live RPC read"
+    }
+  ],
+  "records": [
+    {
+      "id": "direction",
+      "kind": "decision",
+      "content": "Pursue cross-application, user-owned AI memory as the working Monad hackathon direction.",
+      "evidence_status": "supported_by_user_statement",
+      "recorded_by": "assistant",
+      "attributed_to": "user",
+      "source_ids": ["source-direction"],
+      "owner_signature": null
+    },
+    {
+      "id": "project-scope",
+      "kind": "proposal",
+      "content": "Start with ongoing project decisions, their reasons, constraints, and unresolved questions.",
+      "evidence_status": "assistant_proposal",
+      "recorded_by": "assistant",
+      "attributed_to": "assistant",
+      "source_ids": ["source-design-proposal"],
+      "owner_signature": null
+    },
+    {
+      "id": "clearance-result",
+      "kind": "observation",
+      "content": "The clearance spike recorded 11 scenario rounds; denied research requests made zero upstream calls in those rounds.",
+      "evidence_status": "reported_by_local_artifact",
+      "recorded_by": "assistant",
+      "attributed_to": "experiment_report",
+      "source_ids": ["source-clearance-report"],
+      "owner_signature": null
+    },
+    {
+      "id": "independent-runtime",
+      "kind": "proposal",
+      "content": "Applications should be able to implement the memory protocol without adopting our agent runtime.",
+      "evidence_status": "assistant_proposal",
+      "recorded_by": "assistant",
+      "attributed_to": "assistant",
+      "source_ids": ["source-design-proposal"],
+      "owner_signature": null
+    },
+    {
+      "id": "monad-role",
+      "kind": "proposal",
+      "content": "Evaluate shared authorization and accepted-version commitments on Monad while keeping private content encrypted offchain.",
+      "evidence_status": "assistant_proposal",
+      "recorded_by": "assistant",
+      "attributed_to": "assistant",
+      "source_ids": ["source-design-proposal"],
+      "owner_signature": null
+    },
+    {
+      "id": "chain-necessity",
+      "kind": "open_question",
+      "content": "What concrete benefit does Monad provide over signed portable permissions and a version log?",
+      "evidence_status": "unresolved",
+      "recorded_by": "assistant",
+      "attributed_to": "assistant",
+      "source_ids": ["source-design-proposal"],
+      "owner_signature": null
+    }
+  ],
+  "demonstration_only": {
+    "include_in_current_context": false,
+    "grant": {
+      "application": "example-app-b",
+      "project_id": "example-monad-memory-project",
+      "permissions": ["read_current", "propose_update"],
+      "accept_update": false,
+      "state": "hypothetical_not_issued"
+    },
+    "changes": [
+      {
+        "id": "example-bad-proposal",
+        "content": "Store private memory text directly onchain.",
+        "author": "example-app-a",
+        "based_on": "example-revision-1",
+        "state": "hypothetically_rejected",
+        "replaced_by": "example-correction"
+      },
+      {
+        "id": "example-correction",
+        "content": "Keep private content encrypted offchain; evaluate the value of onchain authorization.",
+        "author": "example-owner",
+        "based_on": "example-revision-1",
+        "state": "hypothetical_owner_correction",
+        "replaces": "example-bad-proposal",
+        "owner_signature": null
+      }
+    ]
+  }
+}

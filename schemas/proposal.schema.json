@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable memory local proposal",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": "0"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "author": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{40}$"
+    },
+    "baseCheckpoint": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "formatVersion": {
+            "const": "0"
+          },
+          "projectId": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "kind": {
+            "enum": [
+              "decision",
+              "observation",
+              "open_question"
+            ]
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "author": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{40}$"
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^0x[0-9a-f]{64}$"
+            },
+            "maxItems": 100,
+            "uniqueItems": true,
+            "minItems": 1
+          },
+          "replaces": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^0x[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "formatVersion",
+          "projectId",
+          "id",
+          "kind",
+          "content",
+          "author",
+          "sourceIds",
+          "replaces"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "formatVersion": {
+            "const": "0"
+          },
+          "projectId": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "kind": {
+            "enum": [
+              "user_statement",
+              "application_observation",
+              "document"
+            ]
+          },
+          "speaker": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "excerpt": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "locator": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2048
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "occurredAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "formatVersion",
+          "projectId",
+          "id",
+          "kind",
+          "speaker",
+          "excerpt",
+          "locator",
+          "occurredAt"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100
+    },
+    "retractIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^0x[0-9a-f]{64}$"
+      },
+      "maxItems": 100,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "formatVersion",
+    "projectId",
+    "id",
+    "author",
+    "baseCheckpoint",
+    "records",
+    "sources",
+    "retractIds"
+  ],
+  "additionalProperties": false
+}

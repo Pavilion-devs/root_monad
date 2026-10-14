@@ -1,0 +1,11 @@
+{
+  "transport": "existing encrypted SSH connection; public HTTPS remains unavailable",
+  "readOnly": true,
+  "authority": "monad_testnet",
+  "sequence": "7",
+  "checkpoint": "0xbe25c9046ed68507dd220a1d8c8002d7d9acadee41addc8063310651e20bec0e",
+  "recordCount": 3,
+  "proposalCount": 4,
+  "pendingCommit": false,
+  "verified": true
+}

@@ -1,0 +1,47 @@
+{
+  "action": "approve",
+  "target": "0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0",
+  "project": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+  "fromSequence": "4",
+  "toSequence": "5",
+  "baseCheckpoint": "0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1",
+  "confirmation": "0x8143f875223b67e6e87de6dfb2c274694170b15bdfdb77ea4623ba946067f20e",
+  "expiresAtUnix": "1791877991",
+  "proposal": {
+    "id": "0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0",
+    "author": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+    "status": "pending",
+    "stale": false,
+    "baseCheckpoint": "0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1",
+    "records": [
+      {
+        "author": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+        "content": "Add a boundary test for the accepted retention rule; timestamp semantics still need owner clarification.",
+        "formatVersion": "0",
+        "id": "0x14778b9a09a5275d71bbd80f7ba351e7eaeedb3ebd5d7b3ff908dec618818be9",
+        "kind": "observation",
+        "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+        "replaces": null,
+        "sourceIds": [
+          "0xa98096b4a47616c50b4e805da436afbf5c4e0b1282e866c694365468986360ab"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "excerpt": "Add a boundary test for the accepted retention rule; timestamp semantics still need owner clarification.",
+        "formatVersion": "0",
+        "id": "0xa98096b4a47616c50b4e805da436afbf5c4e0b1282e866c694365468986360ab",
+        "kind": "application_observation",
+        "locator": null,
+        "occurredAt": null,
+        "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+        "speaker": "MCP application"
+      }
+    ],
+    "retractions": [],
+    "replacements": []
+  },
+  "effect": "Accept these records with their stated kinds and apply their replacements/retractions."
+}
+Preview only. No approval signed or committed. Run the same command with --confirm followed by the confirmation value to approve this exact review.

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+  "controlDigest": "0x7ae844eff1978f95e6d83de213d329cc7a4d17bca0149a689d625236a4a581f4",
+  "requestDigest": "0x861cabd5e66db2070f1298aff693aa1e8eee0dcd22ad708e7e2b839a49bfc6e2",
+  "checkpointVerifiedBothDirections": true,
+  "requestVerifiedBothDirections": true
+}

@@ -1,0 +1,25 @@
+node_modules/
+.venv/
+.mcp-venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+
+web/app.js
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Local recovery archives and separately held key material
+*.enc
+*.key
+.local/
+
+# Generated packages, machine files and private operational screenshots
+/dist/
+.DS_Store
+*.pem
+results/tierhive-*.png
+results/vercel-*.png
+results/monad-faucet.png

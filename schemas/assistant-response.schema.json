@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["advice", "citations", "suggestion"],
+  "properties": {
+    "advice": {"type": "string", "minLength": 1, "maxLength": 8000},
+    "citations": {"type": "array", "maxItems": 20, "uniqueItems": true, "items": {"type": "string"}},
+    "suggestion": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["kind", "content", "replaces"],
+          "properties": {
+            "kind": {"enum": ["decision", "observation", "open_question"]},
+            "content": {"type": "string", "minLength": 1, "maxLength": 4000},
+            "replaces": {"type": ["string", "null"]}
+          }
+        }
+      ]
+    }
+  }
+}

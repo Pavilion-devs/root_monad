@@ -1,0 +1,3 @@
+#!/bin/sh
+root_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd) || exit 1
+exec "$root_dir/.venv/bin/python" "$root_dir/ops/owner.py" "$@"

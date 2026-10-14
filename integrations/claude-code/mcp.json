@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "portable-memory": {
+      "type": "stdio",
+      "command": "/Users/olathepavilion/Documents/portable-memory/.mcp-venv/bin/python",
+      "args": [
+        "/Users/olathepavilion/Documents/portable-memory/python/mcp_bridge.py",
+        "--profile",
+        "/Users/olathepavilion/Library/Application Support/PortableMemory/monad-testnet/hosted-memory/claude-code/profile.json"
+      ]
+    }
+  }
+}

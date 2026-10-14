@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable memory local snapshot",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": "0"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "previousDigest": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "digest": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "disposition": {
+            "enum": [
+              "current",
+              "superseded",
+              "retracted"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "digest",
+          "disposition"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "digest": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "digest"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100
+    },
+    "currentIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^0x[0-9a-f]{64}$"
+      },
+      "maxItems": 100,
+      "uniqueItems": true
+    },
+    "resolutions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "proposalId": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "proposalDigest": {
+            "type": "string",
+            "pattern": "^0x[0-9a-f]{64}$"
+          },
+          "state": {
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "proposalId",
+          "proposalDigest",
+          "state",
+          "reason"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100
+    }
+  },
+  "required": [
+    "formatVersion",
+    "projectId",
+    "previousDigest",
+    "records",
+    "sources",
+    "currentIds",
+    "resolutions"
+  ],
+  "additionalProperties": false
+}

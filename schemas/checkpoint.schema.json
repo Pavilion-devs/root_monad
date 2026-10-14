@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable memory experimental checkpoint",
+  "type": "object",
+  "properties": {
+    "projectId": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "sequence": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,77})$"
+    },
+    "previousDigest": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "controlDigest": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "deadline": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,77})$"
+    }
+  },
+  "required": [
+    "projectId",
+    "sequence",
+    "previousDigest",
+    "controlDigest",
+    "deadline"
+  ],
+  "additionalProperties": false
+}

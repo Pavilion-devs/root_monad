@@ -1,0 +1,71 @@
+{
+  "label": "after",
+  "readOnly": true,
+  "startedAtUnix": 1791849411,
+  "samples": [
+    {
+      "elapsedSeconds": 3.205,
+      "rpcSeconds": 3.186,
+      "rpcCalls": 30,
+      "methods": {
+        "eth_chainId": 3,
+        "eth_getBlockByNumber": 9,
+        "eth_getCode": 3,
+        "eth_call": 6,
+        "eth_getLogs": 3,
+        "eth_getTransactionReceipt": 6
+      },
+      "checkpoint": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226",
+      "transport": {
+        "httpRequests": 21,
+        "rpcCalls": 30,
+        "connectionsOpened": 0,
+        "errors": 0,
+        "elapsedSeconds": 3.185501586063765
+      }
+    },
+    {
+      "elapsedSeconds": 3.003,
+      "rpcSeconds": 2.985,
+      "rpcCalls": 30,
+      "methods": {
+        "eth_chainId": 3,
+        "eth_getBlockByNumber": 9,
+        "eth_getCode": 3,
+        "eth_call": 6,
+        "eth_getLogs": 3,
+        "eth_getTransactionReceipt": 6
+      },
+      "checkpoint": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226",
+      "transport": {
+        "httpRequests": 21,
+        "rpcCalls": 30,
+        "connectionsOpened": 0,
+        "errors": 0,
+        "elapsedSeconds": 2.984837039053673
+      }
+    },
+    {
+      "elapsedSeconds": 3.243,
+      "rpcSeconds": 3.226,
+      "rpcCalls": 30,
+      "methods": {
+        "eth_chainId": 3,
+        "eth_getBlockByNumber": 9,
+        "eth_getCode": 3,
+        "eth_call": 6,
+        "eth_getLogs": 3,
+        "eth_getTransactionReceipt": 6
+      },
+      "checkpoint": "0x9a741d0463d454a6b3fb51478a303f53dbf0c2f3ccd5e1cb76ce4f56f220c226",
+      "transport": {
+        "httpRequests": 21,
+        "rpcCalls": 30,
+        "connectionsOpened": 0,
+        "errors": 0,
+        "elapsedSeconds": 3.225927834981121
+      }
+    }
+  ],
+  "errors": []
+}

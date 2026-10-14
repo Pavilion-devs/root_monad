@@ -1,0 +1,15 @@
+{
+  "source": "/Users/olathepavilion/Library/Mobile Documents/com~apple~CloudDocs/Documents/aura-cloningtemplates/ui",
+  "files": {
+    "index.html": "11d2c1de95ad06e0eee19b31fc74113caaaff2d517d048ff8a9dd8799adc87a3",
+    "vite.config.js": "0709465427668ae85ef999f63762d7a06fd92962363fe8cc142ad656d3548115",
+    "README.md": "0545b392579f931387a81cbad1e4e95b3005a863d59f586de2d8f6f6b0c4a3f4",
+    ".gitignore": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae",
+    "package-lock.json": "025d71321108d4759ead2dd5bf325a243e7e546fa71fb4b787c3f7b4f99f3bb8",
+    "package.json": "b7e744ba4bf918281bae9c79e26d83337c157b038c6b268b60a73440333e8395",
+    "src/styles.css": "d41ee5efe8a3a0164cf855a1f18807970a7107b2ce9dda0c73ee02e45668f612",
+    "src/scene.js": "d044f5a9043dee623a6c4b62031c88d9480d3a90949d0c73bc4faedb65c71074",
+    "src/main.jsx": "2ec4bc653249c65ae05ba956ba10ff79aaa1c0faccefd6db289b1f306f688fdc",
+    "src/App.jsx": "610ef7bdab0dfe3aca247a1ccab2ee033142a3c53b75c165088b8567d826954b"
+  }
+}

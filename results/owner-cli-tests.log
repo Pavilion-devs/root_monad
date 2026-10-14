@@ -1,0 +1,140 @@
+
+> portable-memory-authority-spike@0.0.1 test
+> tsx --test tests/*.test.ts && .venv/bin/python -m unittest discover -s tests -p 'test_*.py'
+
+TAP version 13
+# Subtest: planning and coding adapters share verified memory while generated changes remain owner-reviewed
+ok 1 - planning and coding adapters share verified memory while generated changes remain owner-reviewed
+  ---
+  duration_ms: 5259.888209
+  ...
+# Subtest: hosted mode pins Host and Origin and never enables unsigned memory access
+ok 2 - hosted mode pins Host and Origin and never enables unsigned memory access
+  ---
+  duration_ms: 1170.249542
+  ...
+# Subtest: persistent registry service: durable intents, crash recovery, conflicts, stale storage and independent clients
+ok 3 - persistent registry service: durable intents, crash recovery, conflicts, stale storage and independent clients
+  ---
+  duration_ms: 5675.550125
+  ...
+# Subtest: signed HTTP memory flow survives restart and shares approved corrections with an independent Python client
+ok 4 - signed HTTP memory flow survives restart and shares approved corrections with an independent Python client
+  ---
+  duration_ms: 3788.983458
+  ...
+# Subtest: protected archive restores to a new provider; approved handoff survives a crash and fresh clients continue
+ok 5 - protected archive restores to a new provider; approved handoff survives a crash and fresh clients continue
+  ---
+  duration_ms: 8731.382
+  ...
+# Subtest: deployment intent resumes after pre-broadcast interruption on a real local EVM
+ok 6 - deployment intent resumes after pre-broadcast interruption on a real local EVM
+  ---
+  duration_ms: 2576.856542
+  ...
+# Subtest: Monad adapter on local EVM: pending across restart, finalized recovery and independent clients
+ok 7 - Monad adapter on local EVM: pending across restart, finalized recovery and independent clients
+  ---
+  duration_ms: 4426.382166
+  ...
+# Subtest: Python and TypeScript agree on bytes, project identity, digests and signatures in both directions
+ok 8 - Python and TypeScript agree on bytes, project identity, digests and signatures in both directions
+  ---
+  duration_ms: 1103.899667
+  ...
+# Subtest: canonical JSON rejects duplicate keys, malformed Unicode and unsafe numbers
+ok 9 - canonical JSON rejects duplicate keys, malformed Unicode and unsafe numbers
+  ---
+  duration_ms: 0.751625
+  ...
+# Subtest: schemas reject authority labels, noncanonical counters, overflow and ambiguous grant sets
+ok 10 - schemas reject authority labels, noncanonical counters, overflow and ambiguous grant sets
+  ---
+  duration_ms: 0.510167
+  ...
+# Subtest: signed log rejects changed payload, wrong signer/domain, replay, skipped revision and expiry
+ok 11 - signed log rejects changed payload, wrong signer/domain, replay, skipped revision and expiry
+  ---
+  duration_ms: 20.611625
+  ...
+# Subtest: two independent signed log replicas accept different valid successors
+ok 12 - two independent signed log replicas accept different valid successors
+  ---
+  duration_ms: 23.357833
+  ...
+# Subtest: signature representation rejects malleable and truncated signatures
+ok 13 - signature representation rejects malleable and truncated signatures
+  ---
+  duration_ms: 0.127542
+  ...
+# Subtest: request gate binds payload, project, service, current checkpoint and scope; retries do not rerun
+ok 14 - request gate binds payload, project, service, current checkpoint and scope; retries do not rerun
+  ---
+  duration_ms: 19.708375
+  ...
+# Subtest: local registry orders competing updates and enforces its actual trust boundary
+    # Subtest: genesis cannot be claimed by another owner or created without owner approval
+    ok 1 - genesis cannot be claimed by another owner or created without owner approval
+      ---
+      duration_ms: 37.277041
+      ...
+    # Subtest: create binds project derivation and accepts relayed owner signatures
+    ok 2 - create binds project derivation and accepts relayed owner signatures
+      ---
+      duration_ms: 116.343542
+      ...
+    # Subtest: changed digest, wrong key, wrong chain, wrong contract and baseline signatures fail
+    ok 3 - changed digest, wrong key, wrong chain, wrong contract and baseline signatures fail
+      ---
+      duration_ms: 72.021292
+      ...
+    # Subtest: expired, zero and skipped checkpoints fail
+    ok 4 - expired, zero and skipped checkpoints fail
+      ---
+      duration_ms: 41.74225
+      ...
+    # Subtest: Python-signed winner advances; competing successor and replay fail in the EVM
+    ok 5 - Python-signed winner advances; competing successor and replay fail in the EVM
+      ---
+      duration_ms: 505.859167
+      ...
+    # Subtest: lost acknowledgement retry recognizes committed checkpoint without a second transaction
+    ok 6 - lost acknowledgement retry recognizes committed checkpoint without a second transaction
+      ---
+      duration_ms: 38.339875
+      ...
+    # Subtest: separate client connection detects a valid but stale provider history
+    ok 7 - separate client connection detects a valid but stale provider history
+      ---
+      duration_ms: 12.607583
+      ...
+    # Subtest: missing or tampered content fails instead of serving old context
+    ok 8 - missing or tampered content fails instead of serving old context
+      ---
+      duration_ms: 42.5955
+      ...
+    # Subtest: offchain gate refuses revoked app and cached-result replay after a confirmed control change
+    ok 9 - offchain gate refuses revoked app and cached-result replay after a confirmed control change
+      ---
+      duration_ms: 139.829125
+      ...
+    1..9
+ok 15 - local registry orders competing updates and enforces its actual trust boundary
+  ---
+  duration_ms: 2104.795625
+  ...
+1..15
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10307.933542
+................................................................
+----------------------------------------------------------------------
+Ran 64 tests in 8.574s
+
+OK

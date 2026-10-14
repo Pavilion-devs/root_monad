@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "authorityMode": "local_registry",
+  "encryptedRecoveryArchive": true,
+  "separateRecoveryKey": true,
+  "wrongKeyAndTamperRejected": true,
+  "existingDestinationProtected": true,
+  "ownerSignatureRequired": true,
+  "freshProjectKey": true,
+  "interruptedHandoffRecovered": true,
+  "oldAudienceRejected": true,
+  "originalServiceStopped": true,
+  "freshPythonAndTypescriptClients": true,
+  "correctionsAndHistoryPreserved": true,
+  "pendingProposalNotPromoted": true,
+  "newProposalsAndApprovalsAfterMigration": true,
+  "staleExportRejected": true,
+  "limitations": [
+    "Two isolated instances of the same reference provider; not independent provider implementations",
+    "Local Anvil; no Monad finality",
+    "Recovery key is an owner-held file; OS keychain integration remains",
+    "Old provider copies cannot be erased remotely"
+  ]
+}

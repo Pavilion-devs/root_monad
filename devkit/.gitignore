@@ -1,0 +1,8 @@
+.venv/
+.memory-workspace/
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.enc

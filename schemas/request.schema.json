@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portable memory experimental request",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "const": "0"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^0x[0-9a-f]{64}$"
+    },
+    "method": {
+      "const": "POST"
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^/v0/projects/0x[0-9a-f]{64}/(context|history|proposals|inbox|prepare|commit)$"
+    },
+    "operation": {
+      "enum": [
+        "context",
+        "history",
+        "proposals",
+        "inbox",
+        "prepare",
+        "commit"
+      ]
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "formatVersion",
+    "projectId",
+    "method",
+    "path",
+    "operation",
+    "payload"
+  ],
+  "additionalProperties": false
+}

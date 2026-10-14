@@ -1,0 +1,333 @@
+{
+  "date": "2026-10-12T23:11:47.932Z",
+  "passed": true,
+  "modelMode": "live_anthropic",
+  "maxCalls": 3,
+  "maxOutputTokensPerCall": 1536,
+  "calls": [
+    {
+      "role": "planning",
+      "question": "Briefly state the accepted retention decision and distinguish the latency observation from a decision. Propose exactly one correction: change retention to 14 days. Cite the current decision, and use replaces to identify it. Keep advice under 120 words.",
+      "ok": true,
+      "result": {
+        "role": "planning",
+        "checkpoint": "0xb19773efefcaecaaa2b2a6834381f949b60c714dfef6b121243ee99e13a290cc",
+        "advice": {
+          "status": "model_generated_unverified",
+          "text": "The accepted decision (m1) sets retention at 30 days. The latency note (m2) is only an observation—no latency has been measured and no target is approved, so it's not a decision. I'm proposing a correction to change retention from 30 to 14 days; this requires your review and approval before it takes effect."
+        },
+        "citations": [
+          {
+            "recordId": "0x250f8ad4684bcb059f8f5666424b2403651b97db75c7b6fcb8d67826df081d04",
+            "status": "accepted_decision",
+            "content": "Retain project notes for 30 days.",
+            "sources": [
+              {
+                "excerpt": "Suggested in this local demonstration.",
+                "formatVersion": "0",
+                "id": "0xd21e56b2686d607e77e4a97ecf2cd49e06e536fc7dc27641331c99094626291d",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "speaker": "Demo assistant"
+              }
+            ]
+          },
+          {
+            "recordId": "0xf546a382d301156d0ce70d0c79649b4aab7b4201d4bb5a217f8a2dc0cafab36d",
+            "status": "accepted_observation",
+            "content": "Import latency has not been measured. No latency target has been approved.",
+            "sources": [
+              {
+                "excerpt": "Suggested in this local demonstration.",
+                "formatVersion": "0",
+                "id": "0x292b521bf1b736f65303b4dc1c0ea52acd1271f641e37a71860ec67296211339",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "speaker": "Demo assistant"
+              }
+            ]
+          }
+        ],
+        "suggestion": {
+          "status": "pending_owner_review",
+          "proposal": {
+            "formatVersion": "0",
+            "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+            "id": "0x52f9935c76752ab1c15845827dc71a513b61f48e8b2d72acc044795d741b9296",
+            "author": "0x1563915e194d8cfba1943570603f7606a3115508",
+            "baseCheckpoint": "0xb19773efefcaecaaa2b2a6834381f949b60c714dfef6b121243ee99e13a290cc",
+            "sources": [
+              {
+                "formatVersion": "0",
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "id": "0x7f9f3e5d9d1668d077215aef85fd654f344d7074fb14e003836d95bae5b82317",
+                "kind": "application_observation",
+                "speaker": "Planning assistant",
+                "excerpt": "Retain project notes for 14 days.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ],
+            "records": [
+              {
+                "formatVersion": "0",
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "id": "0x83e86e688024d614b3a77b597503f453c0ea2f747d164cad127e8e75a27ecc59",
+                "kind": "decision",
+                "content": "Retain project notes for 14 days.",
+                "author": "0x1563915e194d8cfba1943570603f7606a3115508",
+                "sourceIds": [
+                  "0x7f9f3e5d9d1668d077215aef85fd654f344d7074fb14e003836d95bae5b82317"
+                ],
+                "replaces": "0x250f8ad4684bcb059f8f5666424b2403651b97db75c7b6fcb8d67826df081d04"
+              }
+            ],
+            "retractIds": []
+          }
+        }
+      },
+      "metrics": {
+        "modelCalled": true,
+        "model": "claude-sonnet-5",
+        "stopReason": "end_turn",
+        "usage": {
+          "input_tokens": 1018,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 155
+        },
+        "memorySent": [
+          {
+            "ref": "m1",
+            "status": "accepted_decision",
+            "content": "Retain project notes for 30 days.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Demo assistant",
+                "excerpt": "Suggested in this local demonstration.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          },
+          {
+            "ref": "m2",
+            "status": "accepted_observation",
+            "content": "Import latency has not been measured. No latency target has been approved.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Demo assistant",
+                "excerpt": "Suggested in this local demonstration.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          }
+        ],
+        "elapsedSeconds": 4.733
+      }
+    },
+    {
+      "role": "coding",
+      "question": "What retention rule should the code implement right now? Cite its accepted memory record. Distinguish any unmeasured latency observation from approved requirements. Do not propose changes; use a null suggestion. Keep advice under 120 words.",
+      "ok": true,
+      "result": {
+        "role": "coding",
+        "checkpoint": "0xb19773efefcaecaaa2b2a6834381f949b60c714dfef6b121243ee99e13a290cc",
+        "advice": {
+          "status": "model_generated_unverified",
+          "text": "Implement a 30-day retention rule for project notes, as per the accepted decision (m1). This is the only approved requirement the code should enforce right now. Separately, note that import latency has not been measured and no latency target has been approved (m2) — this is an observation only, not a requirement, and should not be treated as a spec to implement or test against until an actual decision is made."
+        },
+        "citations": [
+          {
+            "recordId": "0x250f8ad4684bcb059f8f5666424b2403651b97db75c7b6fcb8d67826df081d04",
+            "status": "accepted_decision",
+            "content": "Retain project notes for 30 days.",
+            "sources": [
+              {
+                "excerpt": "Suggested in this local demonstration.",
+                "formatVersion": "0",
+                "id": "0xd21e56b2686d607e77e4a97ecf2cd49e06e536fc7dc27641331c99094626291d",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "speaker": "Demo assistant"
+              }
+            ]
+          },
+          {
+            "recordId": "0xf546a382d301156d0ce70d0c79649b4aab7b4201d4bb5a217f8a2dc0cafab36d",
+            "status": "accepted_observation",
+            "content": "Import latency has not been measured. No latency target has been approved.",
+            "sources": [
+              {
+                "excerpt": "Suggested in this local demonstration.",
+                "formatVersion": "0",
+                "id": "0x292b521bf1b736f65303b4dc1c0ea52acd1271f641e37a71860ec67296211339",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "speaker": "Demo assistant"
+              }
+            ]
+          }
+        ],
+        "suggestion": null
+      },
+      "metrics": {
+        "modelCalled": true,
+        "model": "claude-sonnet-5",
+        "stopReason": "end_turn",
+        "usage": {
+          "input_tokens": 1023,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 144
+        },
+        "memorySent": [
+          {
+            "ref": "m1",
+            "status": "accepted_decision",
+            "content": "Retain project notes for 30 days.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Demo assistant",
+                "excerpt": "Suggested in this local demonstration.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          },
+          {
+            "ref": "m2",
+            "status": "accepted_observation",
+            "content": "Import latency has not been measured. No latency target has been approved.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Demo assistant",
+                "excerpt": "Suggested in this local demonstration.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          }
+        ],
+        "elapsedSeconds": 3.086
+      }
+    },
+    {
+      "role": "coding",
+      "question": "What retention rule should the code implement right now? Cite its accepted memory record. Give one implementation check, without claiming you ran it. Do not propose changes; use a null suggestion. Keep advice under 120 words.",
+      "ok": true,
+      "result": {
+        "role": "coding",
+        "checkpoint": "0xf72e89f6a84dece9bdb08eb8fac3b3a738fb208dfa8a9bf28f1d98967e75f2a0",
+        "advice": {
+          "status": "model_generated_unverified",
+          "text": "Implement a 14-day retention rule for project notes, per the accepted decision (m1). The code should delete or expire notes older than 14 days from their creation or last-updated timestamp, depending on your intended semantics. Implementation check: write a test that creates a note with a timestamp older than 14 days and verifies it is excluded from active queries or purged by the retention job, while a note within 14 days remains present. Note that latency targets are not yet established (m2), so this should not factor into retention logic."
+        },
+        "citations": [
+          {
+            "recordId": "0x83e86e688024d614b3a77b597503f453c0ea2f747d164cad127e8e75a27ecc59",
+            "status": "accepted_decision",
+            "content": "Retain project notes for 14 days.",
+            "sources": [
+              {
+                "excerpt": "Retain project notes for 14 days.",
+                "formatVersion": "0",
+                "id": "0x7f9f3e5d9d1668d077215aef85fd654f344d7074fb14e003836d95bae5b82317",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "speaker": "Planning assistant"
+              }
+            ]
+          },
+          {
+            "recordId": "0xf546a382d301156d0ce70d0c79649b4aab7b4201d4bb5a217f8a2dc0cafab36d",
+            "status": "accepted_observation",
+            "content": "Import latency has not been measured. No latency target has been approved.",
+            "sources": [
+              {
+                "excerpt": "Suggested in this local demonstration.",
+                "formatVersion": "0",
+                "id": "0x292b521bf1b736f65303b4dc1c0ea52acd1271f641e37a71860ec67296211339",
+                "kind": "application_observation",
+                "locator": null,
+                "occurredAt": null,
+                "projectId": "0xe7e1839eb9d7c4ef490f2093dc3e0ab88f1d8f190b9542532e9750c98b525947",
+                "speaker": "Demo assistant"
+              }
+            ]
+          }
+        ],
+        "suggestion": null
+      },
+      "metrics": {
+        "modelCalled": true,
+        "model": "claude-sonnet-5",
+        "stopReason": "end_turn",
+        "usage": {
+          "input_tokens": 1018,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "output_tokens": 187
+        },
+        "memorySent": [
+          {
+            "ref": "m1",
+            "status": "accepted_decision",
+            "content": "Retain project notes for 14 days.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Planning assistant",
+                "excerpt": "Retain project notes for 14 days.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          },
+          {
+            "ref": "m2",
+            "status": "accepted_observation",
+            "content": "Import latency has not been measured. No latency target has been approved.",
+            "sources": [
+              {
+                "kind": "application_observation",
+                "speaker": "Demo assistant",
+                "excerpt": "Suggested in this local demonstration.",
+                "locator": null,
+                "occurredAt": null
+              }
+            ]
+          }
+        ],
+        "elapsedSeconds": 3.493
+      }
+    }
+  ],
+  "checks": {
+    "correctProposalAndCitation": true,
+    "pendingCorrectionNotCurrent": true,
+    "ownerApprovedExactProposal": true,
+    "correctionUsedWithCurrentCitation": true,
+    "pendingExcludedFromAllPrompts": true
+  },
+  "limitations": [
+    "Three sample-data calls; not a quality benchmark",
+    "Local Anvil, not live Monad",
+    "Owner signatures use disposable fixtures"
+  ]
+}

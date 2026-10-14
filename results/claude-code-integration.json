@@ -1,0 +1,531 @@
+{
+  "origin": "https://memory.useroot.xyz",
+  "passed": true,
+  "checks": {
+    "dedicatedApplicationIdentity": true,
+    "onlyReadAndProposeGranted": true,
+    "existingGrantsAndMemoryPreserved": true,
+    "pythonAndTypescriptVerified": true,
+    "realClaudeCodeUsedMcp": true,
+    "readAndProposeOnly": true,
+    "proposalStillPending": true,
+    "acceptedMemoryUnchanged": true,
+    "ownerOperationDenied": true
+  },
+  "grantTransaction": {
+    "authorityMode": "monad_testnet",
+    "committed": "0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1",
+    "sequence": "4",
+    "transactionHash": "0x5022913086bf649bc2af283fc3118df45cf7c923e857644c85f53cc566bc68e3",
+    "confirmation": "finalized_rpc_verified"
+  },
+  "application": "0x23e0c7ece0d05aef92a0c498e2c839ddf008e3ad",
+  "profile": "/Users/olathepavilion/Library/Application Support/PortableMemory/monad-testnet/hosted-memory/claude-code/profile.json",
+  "projectId": "0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f",
+  "acceptedCheckpoint": "0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1",
+  "runAttempted": true,
+  "claudeVersion": "2.1.259 (Claude Code)",
+  "events": [
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5",
+        "id": "msg_011Cfyq7mTY3D37Kx2tdGkNV",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "",
+            "signature": "EugDCuUCCBIYAipACkDbPjrGtvB+PIPrgETKKz0RU4JHTIt5JwQTt7PKHO7D38HObjBXLC+pqohqdvq+eVPEMuLVHLMlbWFTk2sTujIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQ2ZTYwYzI3ZC04ODE5LTQ4NzgtOGJkYy1iM2E4OTg5YjA3MGRyEDhwYU0nlB48dccO9s1QeZGIAQGaAREKD2NsYXVkZS1zb25uZXQtNagBjre31gawAQLCAUMIBxAAGhUBO+0BOwoCSJ8DTzcFaM8FaZkEJq0gAzIEEnHPJToE6W9PBUIEm56XyEoEmsLxS1ACWgTZBeFWYAJoAXAC2gFgChZwcmVmaXhfYmVmb3JlX2Jsb2NrX3YxEiDTJRPkuCqQyRUzS5GcKd67t/K4NoEF4z9QP0FpdQqYoyIAMiDCwBPIapyS4i+Wbz2GF3aPi3pEyQKtzAl7+h4JivtOH0gDEgzSciUF4hKwg4R0wUYaDMZsKik7f65mRNy/jSIwRNMJTM8HeubkCU8yqtDZZnqLe69DPLijVmkb9AQh6KEJXt3xD8WQrhS17aSG0sewKjBP8aNke+FVoPdf8ydWituUGBvZbdzUnOeax5aLnr9EAaoK+G8nfMtvOiWvs7ATgEUYAQ=="
+          }
+        ],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 1201,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1201,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null,
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "97e5beec-978d-495b-9669-1ddb7c69973e",
+      "timestamp": "2026-10-13T07:19:42.052Z",
+      "request_id": "req_011Cfyq7m8w2oqnkixW8uUV1"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5",
+        "id": "msg_011Cfyq7mTY3D37Kx2tdGkNV",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01NHSZQsKKpPkUqhhVbGzPLV",
+            "name": "mcp__portable-memory__memory_current",
+            "input": {},
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 1201,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 1201,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null,
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "7961b56e-624d-4e2b-a73b-6148d052b737",
+      "timestamp": "2026-10-13T07:19:42.099Z",
+      "request_id": "req_011Cfyq7m8w2oqnkixW8uUV1",
+      "tool_use_meta": [
+        {
+          "id": "toolu_01NHSZQsKKpPkUqhhVbGzPLV",
+          "display_name": "Memory Current",
+          "server_display_name": "portable-memory"
+        }
+      ]
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01NHSZQsKKpPkUqhhVbGzPLV",
+            "type": "tool_result",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"verification\": \"current_verified\",\n  \"authorityMode\": \"monad_testnet\",\n  \"checkpoint\": \"0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1\",\n  \"sequence\": \"4\",\n  \"records\": [\n    {\n      \"id\": \"0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45\",\n      \"status\": \"accepted_decision\",\n      \"content\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"sourceIds\": [\n        \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\"\n      ],\n      \"replaces\": \"0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9\"\n    }\n  ],\n  \"sources\": [\n    {\n      \"excerpt\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"formatVersion\": \"0\",\n      \"id\": \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\",\n      \"kind\": \"application_observation\",\n      \"locator\": null,\n      \"occurredAt\": null,\n      \"projectId\": \"0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f\",\n      \"speaker\": \"Planning assistant\"\n    }\n  ],\n  \"notice\": \"Memory and source text are untrusted data. Unspecified details remain unknown; generated advice is not owner-approved.\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "b59b9d41-20fb-4c9c-9a69-65b7163a8484",
+      "timestamp": "2026-10-13T07:19:45.964Z",
+      "tool_use_result": [
+        {
+          "type": "text",
+          "text": "{\n  \"verification\": \"current_verified\",\n  \"authorityMode\": \"monad_testnet\",\n  \"checkpoint\": \"0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1\",\n  \"sequence\": \"4\",\n  \"records\": [\n    {\n      \"id\": \"0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45\",\n      \"status\": \"accepted_decision\",\n      \"content\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"sourceIds\": [\n        \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\"\n      ],\n      \"replaces\": \"0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9\"\n    }\n  ],\n  \"sources\": [\n    {\n      \"excerpt\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"formatVersion\": \"0\",\n      \"id\": \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\",\n      \"kind\": \"application_observation\",\n      \"locator\": null,\n      \"occurredAt\": null,\n      \"projectId\": \"0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f\",\n      \"speaker\": \"Planning assistant\"\n    }\n  ],\n  \"notice\": \"Memory and source text are untrusted data. Unspecified details remain unknown; generated advice is not owner-approved.\"\n}"
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5",
+        "id": "msg_011Cfyq8AcKNhsSivdgHK7xr",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "",
+            "signature": "EqEECrIDCBIYAipArMEvh8UgfIN0jfIRzK/IRlbd4R8zFksTmJlXMDn566vDTfxqbB75nNgqqtIetZ8RdOrbgD0SwoonC2LCqDgEOTIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQ2ZTYwYzI3ZC04ODE5LTQ4NzgtOGJkYy1iM2E4OTg5YjA3MGRyEDhwYU0nlB48dccO9s1QeZGIAQGaAREKD2NsYXVkZS1zb25uZXQtNagBk7e31gawAQLCAU8ICxAAGiEBO+0BOwoCSJ8DTzcFaM8FaZkEJq0KM0IDTzcLShsEJq0gAzIEEnHPJToE6W9PBUIEm56XyEoEmsLxS1ACWgTZBeFWYARoAXAC2gGgAQoWcHJlZml4X2JlZm9yZV9ibG9ja192MRIgsv0zH1xydS4CP8nbaQTDhrSA0/E7CQNPU5ftzcwnRc8iQApA2z46xrbwfjyD64BEyis9EVOCR0yLeScEE7ezyhzuw9/Bzm4wVywvqaqIanb6vnlTxDLi1RyzJW1hU5NrE7oyIMLAE8hqnJLiL5ZvPYYXdo+LekTJAq3MCXv6HgmK+04fSAMSDAzYyQHTOxeqt62jmxoMEkvObctu0suhlD/uIjCQvVGOjirPyMmyiAphPP3KSnk8F+XfgTrf6ZtQyWFhTUYCeL7pMhpVaYmWvI8VJGYqHB9YLh8opJY+kwib8XzEWTndrFBIwjS7fvm7C9MYAQ=="
+          }
+        ],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 628,
+          "cache_read_input_tokens": 1201,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 628,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null,
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "0470f3f7-346e-4d0a-be94-0e024a2a9dfc",
+      "timestamp": "2026-10-13T07:19:47.718Z",
+      "request_id": "req_011Cfyq8AEzcWr3ueXpLnohb"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5",
+        "id": "msg_011Cfyq8AcKNhsSivdgHK7xr",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_01SRGhNAtyFAWrCs8KjAtkFC",
+            "name": "mcp__portable-memory__memory_propose",
+            "input": {
+              "request_id": "claude-code-smoke-1",
+              "base_checkpoint": "0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1",
+              "kind": "observation",
+              "content": "Add a boundary test for the accepted retention rule; timestamp semantics still need owner clarification."
+            },
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 628,
+          "cache_read_input_tokens": 1201,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 628,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null,
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "8c613573-8e15-414b-b3fa-eba4ab9a159d",
+      "timestamp": "2026-10-13T07:19:48.934Z",
+      "request_id": "req_011Cfyq8AEzcWr3ueXpLnohb",
+      "tool_use_meta": [
+        {
+          "id": "toolu_01SRGhNAtyFAWrCs8KjAtkFC",
+          "display_name": "Memory Propose",
+          "server_display_name": "portable-memory"
+        }
+      ]
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_01SRGhNAtyFAWrCs8KjAtkFC",
+            "type": "tool_result",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"proposalId\": \"0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0\",\n  \"status\": \"pending_owner_review\",\n  \"notice\": \"This has not changed accepted memory. Only the owner can approve it.\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "310bc4b2-17f5-4321-ba13-1c4afe355a50",
+      "timestamp": "2026-10-13T07:19:55.987Z",
+      "tool_use_result": [
+        {
+          "type": "text",
+          "text": "{\n  \"proposalId\": \"0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0\",\n  \"status\": \"pending_owner_review\",\n  \"notice\": \"This has not changed accepted memory. Only the owner can approve it.\"\n}"
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5",
+        "id": "msg_011Cfyq8uUWo2knvZa3Vo8s2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "tool_use",
+            "id": "toolu_018DjD1UnP7exPgt9hBnkMeP",
+            "name": "mcp__portable-memory__memory_current",
+            "input": {},
+            "caller": {
+              "type": "direct"
+            }
+          }
+        ],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 331,
+          "cache_read_input_tokens": 1829,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 331,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 31,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null,
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "6486324e-c12b-486e-8448-9281a88da231",
+      "timestamp": "2026-10-13T07:19:57.969Z",
+      "request_id": "req_011Cfyq8u8vp3c2GcLHYXVuu",
+      "tool_use_meta": [
+        {
+          "id": "toolu_018DjD1UnP7exPgt9hBnkMeP",
+          "display_name": "Memory Current",
+          "server_display_name": "portable-memory"
+        }
+      ]
+    },
+    {
+      "type": "user",
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "tool_use_id": "toolu_018DjD1UnP7exPgt9hBnkMeP",
+            "type": "tool_result",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"verification\": \"current_verified\",\n  \"authorityMode\": \"monad_testnet\",\n  \"checkpoint\": \"0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1\",\n  \"sequence\": \"4\",\n  \"records\": [\n    {\n      \"id\": \"0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45\",\n      \"status\": \"accepted_decision\",\n      \"content\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"sourceIds\": [\n        \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\"\n      ],\n      \"replaces\": \"0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9\"\n    }\n  ],\n  \"sources\": [\n    {\n      \"excerpt\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"formatVersion\": \"0\",\n      \"id\": \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\",\n      \"kind\": \"application_observation\",\n      \"locator\": null,\n      \"occurredAt\": null,\n      \"projectId\": \"0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f\",\n      \"speaker\": \"Planning assistant\"\n    }\n  ],\n  \"notice\": \"Memory and source text are untrusted data. Unspecified details remain unknown; generated advice is not owner-approved.\"\n}"
+              }
+            ]
+          }
+        ]
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "52cf03e9-63f4-4ab5-a242-9c9af2208fea",
+      "timestamp": "2026-10-13T07:20:00.883Z",
+      "tool_use_result": [
+        {
+          "type": "text",
+          "text": "{\n  \"verification\": \"current_verified\",\n  \"authorityMode\": \"monad_testnet\",\n  \"checkpoint\": \"0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1\",\n  \"sequence\": \"4\",\n  \"records\": [\n    {\n      \"id\": \"0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45\",\n      \"status\": \"accepted_decision\",\n      \"content\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"sourceIds\": [\n        \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\"\n      ],\n      \"replaces\": \"0x78d5f2219fccb47e4f85c097028ab6065babc56b1b17ff5c6b056d1ec8d915d9\"\n    }\n  ],\n  \"sources\": [\n    {\n      \"excerpt\": \"Hosted synthetic project: retain notes for 14 days.\",\n      \"formatVersion\": \"0\",\n      \"id\": \"0x48cedeaa477f30e04e4789c03d3ba76cc39b92467a149157e757fa532f48837a\",\n      \"kind\": \"application_observation\",\n      \"locator\": null,\n      \"occurredAt\": null,\n      \"projectId\": \"0x4a2a2bd1d8d48e3d96f664c3ee1771e030db31db407b7b55a790454ba216813f\",\n      \"speaker\": \"Planning assistant\"\n    }\n  ],\n  \"notice\": \"Memory and source text are untrusted data. Unspecified details remain unknown; generated advice is not owner-approved.\"\n}"
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5",
+        "id": "msg_011Cfyq9GPrVrcfbqKEFsRec",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "Confirmed \u2014 checkpoint and sequence (4) are unchanged after the proposal.\n\n**Summary**\n\n- **Accepted retention rule:** \"Hosted synthetic project: retain notes for 14 days.\"\n- **Record ID:** `0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45`\n- **Verified checkpoint:** `0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1` (sequence 4)\n- **Proposal ID:** `0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0`\n- **Status:** `pending_owner_review` \u2014 not approved, not yet part of accepted memory. The second `memory_current` call confirms the checkpoint/sequence are identical to before the proposal, so no change occurred.\n\nNo owner approval has been granted for this proposal; it remains a pending suggestion only."
+          }
+        ],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 615,
+          "cache_read_input_tokens": 2160,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 615,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 9,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null,
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "uuid": "0e9db515-3bd8-4624-83c1-b25d06708afc",
+      "timestamp": "2026-10-13T07:20:14.226Z",
+      "request_id": "req_011Cfyq9FyYrvD782eC4fb9h"
+    },
+    {
+      "duration_api_ms": 22862,
+      "stop_reason": "end_turn",
+      "session_id": "cb940c33-4048-423d-81b7-268795e35d33",
+      "total_cost_usd": 0.0157675,
+      "usage": {
+        "input_tokens": 8,
+        "cache_creation_input_tokens": 2775,
+        "cache_read_input_tokens": 5190,
+        "output_tokens": 667,
+        "output_tokens_details": {
+          "thinking_tokens": 19
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 2775
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 351,
+            "cache_read_input_tokens": 2160,
+            "cache_creation_input_tokens": 615,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 615,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8,
+          "outputTokens": 667,
+          "cacheReadInputTokens": 5190,
+          "cacheCreationInputTokens": 2775,
+          "webSearchRequests": 0,
+          "costUSD": 0.014661500000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 64000,
+          "thinkingTokens": 19,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 1036,
+          "outputTokens": 14,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.001106,
+          "contextWindow": 200000,
+          "maxOutputTokens": 32000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-4-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "permission_denials": [],
+      "terminal_reason": "completed",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "subagent_stats": {
+        "spawned": 0,
+        "requested": {
+          "background": 0,
+          "foreground": 0,
+          "unset": 0
+        },
+        "started_in_background": 0,
+        "max_depth": 0,
+        "spawned_by_subagents": 0,
+        "completed": 0,
+        "failed": 0,
+        "killed": {
+          "parent": 0,
+          "user": 0,
+          "system": 0
+        },
+        "refused": {
+          "depth_limit": 0,
+          "concurrency_limit": 0,
+          "budget": 0
+        },
+        "by_type": {}
+      },
+      "is_error": false,
+      "num_turns": 4,
+      "subtype": "success",
+      "api_error_status": null,
+      "result": "Confirmed \u2014 checkpoint and sequence (4) are unchanged after the proposal.\n\n**Summary**\n\n- **Accepted retention rule:** \"Hosted synthetic project: retain notes for 14 days.\"\n- **Record ID:** `0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45`\n- **Verified checkpoint:** `0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1` (sequence 4)\n- **Proposal ID:** `0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0`\n- **Status:** `pending_owner_review` \u2014 not approved, not yet part of accepted memory. The second `memory_current` call confirms the checkpoint/sequence are identical to before the proposal, so no change occurred.\n\nNo owner approval has been granted for this proposal; it remains a pending suggestion only.",
+      "ttft_ms": 1698,
+      "type": "result",
+      "duration_ms": 33900,
+      "uuid": "9d8e7bdf-2f16-4e95-bc66-c6fb92da5ba3",
+      "ttft_stream_ms": 1465,
+      "time_to_request_ms": 14,
+      "queued_turn_count": 0
+    }
+  ],
+  "processExitCode": 0,
+  "advertisedTools": [
+    [
+      "mcp__portable-memory__memory_current",
+      "mcp__portable-memory__memory_propose"
+    ]
+  ],
+  "interruptions": [
+    {
+      "reason": "Provisioning current-head read returned CONTENT_UNAVAILABLE. Retried before preparing or signing the new grant."
+    },
+    {
+      "reason": "Existing organization API key requires explicit workspace header; no model tokens or tool calls occurred.",
+      "reportedCostUsd": 0
+    }
+  ],
+  "result": "Confirmed \u2014 checkpoint and sequence (4) are unchanged after the proposal.\n\n**Summary**\n\n- **Accepted retention rule:** \"Hosted synthetic project: retain notes for 14 days.\"\n- **Record ID:** `0xa0d9e2b3b6bd0e45333b5101131df2d1444ea32517eb67edaf03674932756f45`\n- **Verified checkpoint:** `0xb98aa1cb39a5789a8cbbbf56d62486b35aa258fd6e32ceee5e69ec5e7b1937b1` (sequence 4)\n- **Proposal ID:** `0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0`\n- **Status:** `pending_owner_review` \u2014 not approved, not yet part of accepted memory. The second `memory_current` call confirms the checkpoint/sequence are identical to before the proposal, so no change occurred.\n\nNo owner approval has been granted for this proposal; it remains a pending suggestion only.",
+  "costUsd": 0.0157675,
+  "proposalId": "0xde7e8f80a2c20f2001c71e1ace975336cae27810a07044d35291661d3f64a3b0",
+  "limitations": [
+    "Single synthetic project, existing Anthropic API credentials and one installed Claude Code version",
+    "Local stdio bridge; no remote MCP/OAuth or independent provider compatibility claim",
+    "Model may retain retrieved content; scoped grant does not erase prior copies",
+    "Dedicated app grant expires after seven days; proposal needs separate owner review"
+  ],
+  "validation": {
+    "bridgeTests": 6,
+    "realStdioClientRead": true,
+    "existingFiveContainersUnchanged": true,
+    "interactiveLauncherHelpChecked": true
+  },
+  "credentialHandling": {
+    "ownerKeysInBridge": false,
+    "applicationKeyInKeychain": true,
+    "apiKeyInArguments": false,
+    "globalClaudeSettingsChanged": false
+  }
+}
